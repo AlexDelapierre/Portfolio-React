@@ -66,12 +66,23 @@ a:focus,button:focus,input:focus,textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #caa863;
-  color: #caa863;
+  background-color: #caa863;
+  color: #ffffff;
 }
 
 .btn:hover {
   transform: translateY(-3px)
+}
+
+.btn-secondary {
+  background-color: unset;
+  border: 2px solid #caa863;
+  color: #caa863;
+}
+
+.btn-secondary:hover {
+  background-color: #caa863;
+  color: #ffffff;
 }
 
 /* --------Classe utilisée dans le fichier index.js------------- */
