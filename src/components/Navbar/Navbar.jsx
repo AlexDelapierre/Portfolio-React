@@ -38,7 +38,9 @@ function Navbar() {
               className="header__logo-img"
             />
           </div>
-          <span className="header__logo-sub">Alexandre Delapierre</span>
+          <span className="header__logo-sub">
+            Alexandre <span className="header__logo-last">Delapierre</span>
+          </span>
         </div>
 
         <div className="header__main">

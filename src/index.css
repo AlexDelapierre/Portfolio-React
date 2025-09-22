@@ -35,6 +35,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Source Sans Pro',sans-serif;
+  color: #fff;
 }
 
 a {
@@ -51,8 +52,7 @@ a:focus,button:focus,input:focus,textarea:focus {
 }
 
 .btn {
-  background: #7843e9;
-  color: #fff;
+  /* background: #7843e9; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -66,6 +66,8 @@ a:focus,button:focus,input:focus,textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #caa863;
+  color: #caa863;
 }
 
 .btn:hover {
