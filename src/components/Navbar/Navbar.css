@@ -101,6 +101,11 @@
   color: #caa863
 }
 
+.header__link.active,
+.header__sm-menu-link a.active {
+  color: #caa863;
+}
+
 @media only screen and (max-width: 56.25em) {
   .header__link {
       padding:3rem 1.8rem;

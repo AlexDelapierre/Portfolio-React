@@ -5,22 +5,29 @@ import HamMenuIcon from "../../assets/icons/Hamburger-menu.svg";
 import CloseIcon from "../../assets/icons/xmark-solid.svg";
 
 function Navbar() {
-  // état du menu (ouvert ou fermé)
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // gestion clic hamburger
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // liens du menu
+  const navLinks = [
+    { href: "./", label: "Accueil" },
+    { href: "./#about", label: "A propos" },
+    { href: "./#skills", label: "Compétences" },
+    { href: "./#projects", label: "Projets" },
+    { href: "./#contact", label: "Contact" },
+  ];
 
-  // gestion clic logo
-  const handleLogoClick = () => {
-    window.location.href = "/";
-  };
+  // clic hamburger
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  // gestion clic sur un lien du menu mobile
-  const handleLinkClick = () => {
-    setMenuOpen(false);
+  // clic logo
+  const handleLogoClick = () => (window.location.href = "/");
+
+  // clic lien mobile
+  const handleLinkClick = () => setMenuOpen(false);
+
+  // détecter si le lien est actif
+  const isActive = (href) => {
+    return window.location.hash === href.replace("./", "#") || window.location.pathname === href.replace("./", "/");
   };
 
   return (
@@ -44,32 +51,27 @@ function Navbar() {
         </div>
 
         <div className="header__main">
+          {/* menu desktop */}
           <ul className="header__links">
-            <li className="header__link-wrapper">
-              <a href="./" className="header__link">Accueil</a>
-            </li>
-            <li className="header__link-wrapper">
-              <a href="./#about" className="header__link">A propos</a>
-            </li>
-            <li className="header__link-wrapper">
-              <a href="./#skills" className="header__link">Compétences</a>
-            </li>
-            <li className="header__link-wrapper">
-              <a href="./#projects" className="header__link">Projets</a>
-            </li>
-            <li className="header__link-wrapper">
-              <a href="./#contact" className="header__link">Contact</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href} className="header__link-wrapper">
+                <a
+                  href={link.href}
+                  className={`header__link ${isActive(link.href) ? "active" : ""}`}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
+          {/* hamburger menu */}
           <div className="header__main-ham-menu-cont" onClick={toggleMenu}>
-            {/* icône hamburger */}
             <img
-              src={HamMenuIcon} 
+              src={HamMenuIcon}
               alt="hamburger menu"
               className={`header__main-ham-menu ${menuOpen ? "d-none" : ""}`}
             />
-            {/* icône fermeture */}
             <img
               src={CloseIcon}
               alt="hamburger menu close"
@@ -85,21 +87,17 @@ function Navbar() {
       <div className={`header__sm-menu ${menuOpen ? "header__sm-menu--active" : ""}`}>
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
-            <li className="header__sm-menu-link">
-              <a href="./" onClick={handleLinkClick}>Accueil</a>
-            </li>
-            <li className="header__sm-menu-link">
-              <a href="./#about" onClick={handleLinkClick}>A propos</a>
-            </li>
-            <li className="header__sm-menu-link">
-              <a href="./#skills" onClick={handleLinkClick}>Compétences</a>
-            </li>
-            <li className="header__sm-menu-link">
-              <a href="./#projects" onClick={handleLinkClick}>Projets</a>
-            </li>
-            <li className="header__sm-menu-link">
-              <a href="./#contact" onClick={handleLinkClick}>Contact</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href} className="header__sm-menu-link">
+                <a
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  className={isActive(link.href) ? "active" : ""}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
