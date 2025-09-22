@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
-    background-color: #152757;
+  background-color: transparent;
   box-shadow: 0 10px 100px rgba(0,0,0,.1)
 }
 
@@ -67,10 +67,6 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px
-}
-
-.header__logo-last {
-  color: #caa863; 
 }
 
 /* ----------Menu Desktop--------- */

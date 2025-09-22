@@ -38,6 +38,27 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 800
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10rem;
+  margin-bottom: 3rem
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.5;             
+}
+
 a {
   text-decoration: none;
   color: inherit
@@ -83,6 +104,10 @@ a:focus,button:focus,input:focus,textarea:focus {
 .btn-secondary:hover {
   background-color: #caa863;
   color: #ffffff;
+}
+
+.text-secondary-color {
+  color: #caa863
 }
 
 /* --------Classe utilisée dans le fichier index.js------------- */

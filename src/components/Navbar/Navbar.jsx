@@ -9,7 +9,7 @@ function Navbar() {
 
   // liens du menu
   const navLinks = [
-    { href: "./", label: "Accueil" },
+    { href: "./#home", label: "Accueil" },
     { href: "./#about", label: "A propos" },
     { href: "./#skills", label: "Compétences" },
     { href: "./#projects", label: "Projets" },
@@ -46,7 +46,7 @@ function Navbar() {
             />
           </div>
           <span className="header__logo-sub">
-            Alexandre <span className="header__logo-last">Delapierre</span>
+            Alexandre <span className="text-secondary-color">Delapierre</span>
           </span>
         </div>
 

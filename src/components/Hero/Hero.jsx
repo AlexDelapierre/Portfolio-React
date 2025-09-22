@@ -4,7 +4,7 @@ import PhotoIdentite from "../../assets/img/Photo_identite.jpg";
 
 function Hero() {
   return (
-    <section className="home-hero">
+    <section id="home" className="home-hero">
       <div className="home-hero__content">
 
         <div className="home-hero__portrait">
@@ -15,11 +15,11 @@ function Hero() {
           />
         </div>
 
-        <h1 className="home-hero__name">
-          ALEXANDRE <span className="home-hero__name-last">DELAPIERRE</span>
+        <h1>
+          ALEXANDRE <span className="text-secondary-color">DELAPIERRE</span>
         </h1>
         <h2 className="home-hero__title">
-          Développeur <span className="home-hero__title-key">Web Fullstack</span>
+          Développeur <span className="text-secondary-color">Web Fullstack</span>
         </h2>
 
         <div className="home-hero__info">
