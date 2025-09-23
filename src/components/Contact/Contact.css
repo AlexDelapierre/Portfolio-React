@@ -1,0 +1,86 @@
+.contact {
+  height: 100vh;
+  background-color: #1b2d53;  
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: flex-start; */
+  /* gap: 40px; */
+  /* margin-top: 20px; */
+}
+.contact-text {
+  padding-left: 10rem;
+}
+/* Chaque colonne prend la moitié */
+.contact-text,
+.contact-form {
+  flex: 1;
+}
+
+/* ----- Formulaire style Bootstrap ----- */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  font-size: 2rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #caa863;
+  box-shadow: 0 0 0 0.2rem rgba(202, 168, 99, 0.25);
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #caa863;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #b69050;
+}
+
+.contact-success {
+  font-size: 1.2rem;
+  color: #caa863;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    padding-left: 0rem;
+  }
+
+  .contact-text,
+  .contact-form {
+    width: 100%;
+  }
+}
