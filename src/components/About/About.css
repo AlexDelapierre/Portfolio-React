@@ -1,0 +1,11 @@
+.about {
+  height: 100vh;               
+  background-color: #0f172b;   
+  display: flex;
+  flex-direction: column;                 
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: #ffffff;               
+  padding: 0 20px;              
+  box-sizing: border-box;
+}

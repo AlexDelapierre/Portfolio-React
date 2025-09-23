@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import './App.css';
 
 function App() {
@@ -7,12 +8,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <section id="about" className="about">
-        <h2>A propos de <span className='text-secondary-color'>moi</span></h2>
-        <p>
-          Développeur passionné, je crée des applications web modernes et performantes pour donner vie à vos projets.
-        </p>
-      </section>
+      <About/>
       <section id="skills" className="skills">
         <h2>Mes <span className='text-secondary-color'>Compétences</span></h2>
         <p>
