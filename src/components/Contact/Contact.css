@@ -10,13 +10,13 @@
 }
 .contact-container {
   display: flex;
-  /* justify-content: space-between;
-  align-items: flex-start; */
-  /* gap: 40px; */
-  /* margin-top: 20px; */
 }
 .contact-text {
   padding-left: 10rem;
+}
+
+.contact-text p {
+  margin-bottom: 2rem;
 }
 /* Chaque colonne prend la moitié */
 .contact-text,

@@ -4,9 +4,15 @@ import LinkedinIcon from "../../assets/icons/Linkedin-white.svg";
 import GithubIcon from "../../assets/icons/github-white-60.svg";
 import CVIcon from "../../assets/icons/CV-white-48.png";
 
-function Socials() {
+function Socials({ align = "center" }) {
+
+  // On ajoute la classe correspondante selon la prop
+  let containerClass = "socials-container";
+  if (align === "left") containerClass += " align-left";
+  else if (align === "right") containerClass += " align-right";
+
 	return (
-		<div className="socials-container">
+		<div className={containerClass}>
       <div className="social">
         <a
           href="https://www.linkedin.com/in/alexandre-delapierre/"

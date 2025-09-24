@@ -1,7 +1,9 @@
 import { useForm, ValidationError } from '@formspree/react';
-import './Contact.css'; // ton CSS pour la section
+import './Contact.css'; 
+import Socials from '../Socials/Socials';
+
 export default function Contact() {
-  const [state, handleSubmit] = useForm("mkgqnrpg"); // Remplace "mkgqnrpg" par ton ID Formspree
+  const [state, handleSubmit] = useForm("mkgqnrpg"); 
 
   return (
     <section id="contact" className="contact">
@@ -15,6 +17,7 @@ export default function Contact() {
             Vous avez un projet en tête ? Une question ? N'hésitez pas à me
             contacter, je serais ravi d'échanger avec vous.
           </p>
+          <Socials align="left" />
         </div>
 
         {/* Bloc formulaire */}
