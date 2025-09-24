@@ -13,6 +13,7 @@ function Navbar() {
     { href: "./#about", label: "A propos" },
     { href: "./#skills", label: "Compétences" },
     { href: "./#projects", label: "Projets" },
+    { href: "./#career", label: "Parcours" },
     { href: "./#contact", label: "Contact" },
   ];
 
