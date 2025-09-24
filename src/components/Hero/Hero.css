@@ -12,7 +12,6 @@
   overflow: hidden;
   margin: auto;
   margin-bottom: 1.5rem;
-  /* border: 5px solid #7843e9; */
   border: 5px solid #caa863;
 }
 
@@ -26,7 +25,6 @@
 .home-hero__title {
   font-size: 3rem;
   text-align: center;
-  /* color: #7843e9; */
   font-weight: 600;
   margin-top: 1rem
 }
@@ -37,7 +35,6 @@
 }
 
 .home-hero__info-text {
-  /* color: #333; */
   text-align: center;
 }
 
@@ -54,8 +51,6 @@
   justify-content: center;
   margin-bottom: 2rem;
 }
-
-
 
 /* ------------------------Mouse scroll----------------------- */
 .home-hero__mouse-scroll-cont {
