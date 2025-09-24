@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import PhotoIdentite from "../../assets/img/Photo_identite.jpg";
+import Socials from "../Socials/Socials";
 
 function Hero() {
   return (
@@ -32,57 +33,12 @@ function Hero() {
           <a href="./#projects" className="btn btn-primary btn-primary:hover">Mes projets</a>
           <a href="./#contact" className="btn btn-secondary btn-secondary:hover">Me contacter</a>
         </div>
+
+        <Socials/>
         
-        <div className="home-hero__socials">
-          <div className="home-hero__social">
-            <a
-              href="https://www.linkedin.com/in/alexandre-delapierre/"
-              className="home-hero__social-icon-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
-                alt="Alexandre Delapierre Linkedin Profile"
-                className="home-hero__social-icon"
-              />
-            </a>
-          </div>
-
-          <div className="home-hero__social">
-            <a
-              href="https://github.com/AlexDelapierre"
-              className="home-hero__social-icon-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
-                alt="Alexandre Delapierre Github Profile"
-                className="home-hero__social-icon"
-              />
-            </a>
-          </div>
-
-          <div className="home-hero__social">
-            <a
-              href="https://cv.alexdelapierre.fr/"
-              className="home-hero__social-icon-link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/e978c8491d93813aa00b3dc80b9abfb0d64a9086/3c187/assets/svg/book-dark.svg"
-                alt="Alexandre Delapierre CV inline"
-                className="home-hero__social-icon"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className="home-hero__mouse-scroll-cont">
+        {/* <div className="home-hero__mouse-scroll-cont">
           <div className="mouse"></div>
-        </div>
+        </div> */}
 
       </div>
     </section>
