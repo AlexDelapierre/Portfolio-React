@@ -33,7 +33,7 @@ export default function Contact() {
                   type="text"
                   name="name"
                   className="form-control"
-                  placeholder="Entrez votre nom et prénom *"
+                  placeholder="Nom et prénom *"
                   required
                 />
               </div>
@@ -46,12 +46,30 @@ export default function Contact() {
                   type="email"
                   name="email"
                   className="form-control"
-                  placeholder="Entrez votre email *"
+                  placeholder="Adresse email *"
                   required
                 />
                 <ValidationError 
                   prefix="Email" 
                   field="email"
+                  errors={state.errors}
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="sujet" className="form-label">
+                </label>
+                <input
+                  id="sujet"
+                  type="sujet"
+                  name="sujet"
+                  className="form-control"
+                  placeholder="Sujet *"
+                  required
+                />
+                <ValidationError 
+                  prefix="Sujet" 
+                  field="sujet"
                   errors={state.errors}
                 />
               </div>
@@ -64,7 +82,7 @@ export default function Contact() {
                   name="message"
                   rows="4"
                   className="form-control"
-                  placeholder="Votre message... *"
+                  placeholder="Message *"
                   required
                 ></textarea>
                 <ValidationError 
