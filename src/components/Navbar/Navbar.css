@@ -69,6 +69,26 @@
   letter-spacing: 1px
 }
 
+/* Style pour que les boutons ressemblent à des liens */
+ul button {
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+ul button:hover {
+  color: #caa863;
+}
+
+ul button.active {
+   color: #caa863; 
+}
+
 /* ----------Menu Desktop--------- */
 .header__links {
   display: flex
@@ -85,21 +105,10 @@
   padding: 2.2rem 3rem;
   display: inline-block;
   font-size: 1.6rem;
-  /* color: #333; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   transition: color .3s
-}
-
-.header__link:hover {
-  /* color: #7843e9 */
-  color: #caa863
-}
-
-.header__link.active,
-.header__sm-menu-link a.active {
-  color: #caa863;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -137,7 +146,6 @@
 /* ----------Menu version mobile------------------- */
 
 .header__sm-menu {
-  /* background: #fff; */
   background: #1e3057;
   position: absolute;
   width: 100%;
@@ -162,29 +170,26 @@
   }
 }
 
-.header__sm-menu-link a {
+.header__sm-menu-link button {
   display: block;
   text-decoration: none;
   padding: 2.5rem 3rem;
   font-size: 1.6rem;
-  /* color: #333; */
   text-align: right;
-  /* border-bottom: 1px solid #eee; */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: color .3s
 }
 
-.header__sm-menu-link a:hover {
-  /* color: #7843e9 */
+.header__sm-menu-link button:hover {
   color: #caa863
 }
 
-.header__sm-menu-link:first-child a {
+/* .header__sm-menu-link:first-child button {
   border-top: 1px solid #eee
-}
+} */
 
-.header__sm-menu-link-last {
+/* .header__sm-menu-link-last {
   border-bottom: 0
-}
+} */
