@@ -29,8 +29,8 @@ function Hero() {
         </div>
 
         <div className="home-hero__btns">   
-          <a href="./#projects" className="btn">Mes projets</a>
-          <a href="./#contact" className="btn btn-secondary">Me contacter</a>
+          <a href="./#projects" className="btn btn-primary btn-primary:hover">Mes projets</a>
+          <a href="./#contact" className="btn btn-secondary btn-secondary:hover">Me contacter</a>
         </div>
         
         <div className="home-hero__socials">

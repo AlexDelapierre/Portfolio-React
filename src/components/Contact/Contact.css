@@ -50,20 +50,6 @@
   box-shadow: 0 0 0 0.2rem rgba(202, 168, 99, 0.25);
 }
 
-.btn-primary {
-  padding: 10px 20px;
-  background-color: #caa863;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #b69050;
-}
-
 .contact-success {
   font-size: 2rem;
   margin-left: 15rem;

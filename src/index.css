@@ -79,7 +79,6 @@ a:focus,button:focus,input:focus,textarea:focus {
 }
 
 .btn {
-  /* background: #7843e9; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -93,12 +92,19 @@ a:focus,button:focus,input:focus,textarea:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #caa863;
-  color: #ffffff;
 }
 
 .btn:hover {
   transform: translateY(-3px)
+}
+
+.btn-primary {
+  background-color: #caa863;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #b69050;
 }
 
 .btn-secondary {
