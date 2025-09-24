@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 import PhotoIdentite from "../../assets/img/Photo_identite.jpg";
-import HamMenuIcon from "../../assets/icons/Hamburger-menu.svg";
-import CloseIcon from "../../assets/icons/xmark-solid.svg";
+import HamMenuIcon from "../../assets/icons/Hamburger-menu-white-50.svg";
+import CloseIcon from "../../assets/icons/icon-effacer-white.svg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -69,13 +69,13 @@ function Navbar() {
           onClick={handleLogoClick}
           style={{ cursor: "pointer" }}
         >
-          <div className="header__logo-img-cont">
+          {/* <div className="header__logo-img-cont">
             <img
               src={PhotoIdentite}
               alt="Photo identité"
               className="header__logo-img"
             />
-          </div>
+          </div> */}
           <span className="header__logo-sub">
             Alexandre <span className="text-secondary-color">Delapierre</span>
           </span>
