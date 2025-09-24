@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1b2d53;  
   padding: 0 20px;
   box-sizing: border-box;
@@ -65,7 +65,8 @@
 }
 
 .contact-success {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-left: 15rem;
   color: #caa863;
 }
 

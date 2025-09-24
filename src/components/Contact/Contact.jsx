@@ -65,6 +65,7 @@ export default function Contact() {
                   rows="4"
                   className="form-control"
                   placeholder="Votre message... *"
+                  required
                 ></textarea>
                 <ValidationError 
                   prefix="Message" 
