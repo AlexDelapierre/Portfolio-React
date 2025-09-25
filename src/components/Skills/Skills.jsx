@@ -7,25 +7,35 @@ function Skills() {
   const skillsData = [
     {
       icon: FaReact,
-      title: "React",
-      tags: ["JSX", "Hooks", "Router", "State"]
+      title: "Frontend",
+      tags: ["JavaScript", "ReactJS", "Twig"]
     },
     {
       icon: FaPhp,
-      title: "PHP",
-      tags: ["Symfony", "Composer", "OOP", "Twig"]
+      title: "Backend",
+      tags: ["TypeScript", "NodeJS", "Express" ,"PHP", "Symfony", "SQL(MySQL, MariaDB)", "NoSQL(MongoDB, Mongoose)", "ORM Doctrine", "API REST"]
     },
     {
       icon: FaDatabase,
-      title: "SQL",
-      tags: ["CRUD", "Joins", "Indexes", "Optimisation"]
+      title: "Mobile",
+      tags: ["Responsive Design", "Mobile First"] 
+    },
+    {
+      icon: FaDatabase,
+      title: "Intégration Web",
+      tags: ["HTML", "CSS", "Bootstrap"]
+    },
+    {
+      icon: FaDatabase,
+      title: "Outils",
+      tags: ["Git/GitHub", "VS Code", "Vite", "Postman", "AdobeXD", "Figma"]
     }
   ];
 
   return (
     <section id="skills" className="skills">
-        <h2>Mes <span className='text-secondary-color'>Compétences</span></h2>
-        <div className="skills-grid">
+      <h2>Mes <span className='text-secondary-color'>Compétences</span></h2>
+      <div className="skills-container">
         {skillsData.map((skill, index) => (
           <SkillCard
             key={index}
@@ -35,7 +45,7 @@ function Skills() {
           />
         ))}
       </div>
-      </section>
+    </section>
   );
 }
 
