@@ -50,6 +50,13 @@
   margin-bottom: 2rem;
 }
 
+.btn-Hero {
+  font-size: 1.5rem;
+  width: 12em;
+  height: 3.5em;
+  padding: 1.5rem 2rem;
+}
+
 /* ------------------------Mouse scroll----------------------- */
 .home-hero__mouse-scroll-cont {
   display: flex;

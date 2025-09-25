@@ -1,3 +1,9 @@
 .projects {
   background-color: #0f172b;   
 }
+
+.projectCards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+}

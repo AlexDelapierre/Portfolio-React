@@ -11,8 +11,11 @@
 	padding: 1.5rem;
 	border: 1px solid #278ee9;
 	box-sizing: border-box;
-	margin-bottom: 1rem; /* espace entre les cards */
-	/* pas de height fixe → la card s'adapte au contenu */
+	margin-bottom: 1rem; 
+}
+
+.skillsCard-container:hover {
+	transform: scale(1.04);
 }
 
 /* Tablette */
@@ -44,8 +47,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;       /* espace autour de l’icône */
-  border-radius: 20%;    /* rond parfait, ou 0.5rem pour arrondi léger */
+  padding: 0.5rem;       
+  border-radius: 20%;    
 }
 
 .skillsCard-icon {
@@ -63,12 +66,9 @@
 	flex-wrap: wrap;
 	gap: 1rem;
 	padding: 0;
-	/* overflow supprimé → la hauteur de la card suit le contenu */
 }
 
 .skillsCard-btn {
-	/* background: #caa863; */
-	/* color: #152550; */
 	border: none;
 	border-radius: 2rem;
 	padding: 0.7rem 1rem;

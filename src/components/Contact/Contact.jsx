@@ -95,7 +95,7 @@ export default function Contact() {
                 />
               </div>
               <p>* Tous les champs sont obligatoires</p>
-              <button type="submit" className="btn btn-primary btn-primary:hover" disabled={state.submitting}>
+              <button type="submit" className="btn btn-Contact btn-primary btn-primary:hover" disabled={state.submitting}>
                 Envoyer
               </button>
             </form>

@@ -106,10 +106,6 @@ a:focus,button:focus,input:focus,textarea:focus {
   border-radius: 100px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   transition: transform .3s;
-  padding: 1.5rem 2rem;
-  font-size: 1.5rem;
-  width: 12em;
-  height: 3.5em;
   display: flex;
   align-items: center;
   justify-content: center;

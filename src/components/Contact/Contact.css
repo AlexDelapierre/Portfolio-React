@@ -46,6 +46,13 @@
   color: #caa863;
 }
 
+.btn-Contact {
+  font-size: 1.5rem;
+  width: 12em;
+  height: 3.5em;
+  padding: 1.5rem 2rem;
+}
+
 /* Responsive mobile */
 @media (max-width: 768px) {
   .contact-container {
