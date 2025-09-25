@@ -1,5 +1,6 @@
 .home-hero {
   background-color: #162b62;
+  min-height: 100vh;
 }
 
 .home-hero__portrait {

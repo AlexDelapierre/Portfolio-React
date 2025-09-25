@@ -1,34 +1,37 @@
 import "./Skills.css";
-import SkillCard from "./SkillCard/SkillCard";
-import { FaReact, FaPhp, FaDatabase } from "react-icons/fa";
+import SkillCard from "./SkillsCard/SkillsCard";
+import {FaLaptopCode, FaReact, FaDatabase, FaMobileAlt, FaHtml5, FaPalette, FaTools } from "react-icons/fa";
 
 function Skills() {
 
   const skillsData = [
     {
-      icon: FaReact,
+      icon: FaLaptopCode,
       title: "Frontend",
-      tags: ["JavaScript", "ReactJS", "Twig"]
+      tags: ["JavaScript", "ReactJS", "Twig", "Responsive Design", "Mobile First"],
+      backgroundColor: "#213f7a",
+      color: "#50a2ff"
     },
     {
-      icon: FaPhp,
+      icon: FaDatabase,
       title: "Backend",
-      tags: ["TypeScript", "NodeJS", "Express" ,"PHP", "Symfony", "SQL(MySQL, MariaDB)", "NoSQL(MongoDB, Mongoose)", "ORM Doctrine", "API REST"]
+      tags: ["TypeScript", "NodeJS", "Express", "PHP", "Symfony", "SQL", "MongoDB", "Doctrine", "API REST"],
+      backgroundColor: "#184e56",
+      color: "#05df72"
     },
     {
-      icon: FaDatabase,
-      title: "Mobile",
-      tags: ["Responsive Design", "Mobile First"] 
-    },
-    {
-      icon: FaDatabase,
+      icon: FaPalette,
       title: "Intégration Web",
-      tags: ["HTML", "CSS", "Bootstrap"]
+      tags: ["HTML", "CSS", "Bootstrap"],
+      backgroundColor: "#3b347a",
+      color: "#c27aff"
     },
     {
-      icon: FaDatabase,
+      icon: FaTools,
       title: "Outils",
-      tags: ["Git/GitHub", "VS Code", "Vite", "Postman", "AdobeXD", "Figma"]
+      tags: ["Git/GitHub", "VS Code", "Vite", "Postman", "AdobeXD", "Figma"],
+      backgroundColor: "#4a2f51",
+      color: "#ff6467"
     }
   ];
 
@@ -42,6 +45,8 @@ function Skills() {
             icon={skill.icon}
             title={skill.title}
             tags={skill.tags}
+            backgroundColor={skill.backgroundColor}
+            color={skill.color}
           />
         ))}
       </div>

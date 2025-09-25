@@ -1,0 +1,87 @@
+/* ===== Mobile First ===== */
+.skillsCard-container {
+	width: 100%;
+	min-width: 140px;
+	max-width: 100%;
+	background: #1e3057;
+	border-radius: 1rem;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border: 1px solid #278ee9;
+	box-sizing: border-box;
+	margin-bottom: 1rem; /* espace entre les cards */
+	/* pas de height fixe → la card s'adapte au contenu */
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+	.skillsCard-container {
+		width: 48%;
+		min-width: 180px;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+	.skillsCard-container {
+		width: 24%;
+		min-width: 220px;
+		max-width: 350px;
+	}
+}
+
+.skillsCard-header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.skillsCard-icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;       /* espace autour de l’icône */
+  border-radius: 20%;    /* rond parfait, ou 0.5rem pour arrondi léger */
+}
+
+.skillsCard-icon {
+  font-size: clamp(1.5rem, 4vw, 3rem); /* min = 1.5rem, max = 3rem */
+  flex-shrink: 0; /* évite que l'icône se compresse */
+}
+
+
+.skillsCard-title {
+	margin: 0;
+}
+
+.skillsCard-buttons-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 0;
+	/* overflow supprimé → la hauteur de la card suit le contenu */
+}
+
+.skillsCard-btn {
+	/* background: #caa863; */
+	/* color: #152550; */
+	border: none;
+	border-radius: 2rem;
+	padding: 0.7rem 1rem;
+	min-width: 6rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin-bottom: 4px;
+	cursor: pointer;
+	transition: background 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
