@@ -1,17 +1,12 @@
-/* ===== Mobile First ===== */
 .projectCard-container {
-	width: 100%;
-	min-width: 140px;
-	max-width: 100%;
-	background: #1e3057;
+	/* background: #1e3057; */
+	background-color: #162346;
 	border-radius: 1rem;
 	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
-	border: 1px solid #278ee9;
+	border: 1px solid #19578e;
 	box-sizing: border-box;
-	margin-bottom: 1.5rem; /* espace entre les cards */
 	transition: transform 0.2s;
 }
 
@@ -19,19 +14,25 @@
 	transform: scale(1.04);
 }
 
+.projectCard-image-container {
+
+}
+
 /* Image en moitié supérieure */
 .projectCard-image {
-	width: 100%;
-	height: 180px; /* ajustable selon besoin */
-	background-size: cover;
-	background-position: center;
-	border-radius: 1rem 1rem 0 0; /* arrondi coins supérieurs */
+	background-size: 100% auto; 
+  background-position: top center; 
+  background-repeat: no-repeat;
 	margin-bottom: 1rem;
 	transition: filter 0.2s;
 }
 
 .projectCard-container:hover .projectCard-image {
 	filter: brightness(0.7);
+}
+
+.projectCard-content {
+	padding: 1rem;
 }
 
 /* Titre */
@@ -79,27 +80,43 @@
 	transition: background 0.2s;
 }
 
+/* Smartphone */
+@media (max-width: 480px) {
+	.projectCard-container {
+		height: 50vh;
+		width: 100%;
+	}
+	.projectCard-mobile-banner {
+		height: 10%; 
+		width: 100%;
+	}
+	.projectCard-image {
+		height: 40%; 
+		width: 100%;
+	}
+}
+
 /* Tablette */
 @media (min-width: 768px) {
 	.projectCard-container {
-		width: 48%;
-		min-width: 220px;
+		height: 80vh;
+		width: 32%;
+	}
+	.projectCard-image {
+		height: 50%; 
+		width: 100%;
 	}
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
 	.projectCard-container {
+		height: 80vh;
 		width: 32%;
-		min-width: 250px;
-		margin-bottom: 0;
+	}
+	.projectCard-image {
+		height: 50%; 
+		width: 100%;
 	}
 }
 
-/* Conteneur parent pour aligner les 3 cards */
-.projectCards-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.5%;
-	justify-content: space-between;
-}
