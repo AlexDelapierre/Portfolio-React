@@ -23,8 +23,10 @@ function Skills() {
       icon: FaPalette,
       title: "Intégration Web",
       tags: ["HTML", "CSS", "Bootstrap"],
-      backgroundColor: "#3b347a",
-      color: "#c27aff"
+      backgroundColor: "#484946",
+      color: "#fdc700"
+      // backgroundColor: "#3b347a",
+      // color: "#c27aff"
     },
     {
       icon: FaTools,

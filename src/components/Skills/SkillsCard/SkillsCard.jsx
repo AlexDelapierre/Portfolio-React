@@ -18,11 +18,11 @@ function SkillsCard({ icon: Icon, title, tags, backgroundColor, color }) {
       </div>
 
       {/* Boutons (tags) */}
-      <div className="skillsCard-buttons-container">
+      <div className="btn-card-container">
         {tags.map((tag, index) => (
           <button
             key={index}
-            className="skillsCard-btn"
+            className="btn-card"
             style={{ backgroundColor: backgroundColor, color: color }}
           >
             {tag}

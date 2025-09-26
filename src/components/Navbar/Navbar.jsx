@@ -62,7 +62,7 @@ function Navbar() {
   }, []);
 
   return (
-    <header className="header">
+    <nav className="header">
       <div className="header__content">
         <div
           className="header__logo-container"
@@ -139,7 +139,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
 

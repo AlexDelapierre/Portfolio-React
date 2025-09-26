@@ -50,32 +50,6 @@
 	line-height: 1.4;
 }
 
-/* Tags / technologies */
-.projectCard-tags-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-  padding: 0;
-	margin-bottom: 1rem;
-}
-
-.projectCard-tag {
-	border: none;
-	border-radius: 2rem;
-	padding: 0.7rem 1rem;
-	min-width: 6rem;
-	font-size: 1.1rem;
-	font-weight: 500;
-  margin-bottom: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: default;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
 /* Boutons Voir / Code */
 .projectCard-buttons {
 	display: flex;

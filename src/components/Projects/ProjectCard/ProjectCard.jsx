@@ -28,11 +28,11 @@ function ProjectCard({
       {description && <p className="projectCard-description">{description}</p>}
 
       {/* Technologies */}
-      <div className="projectCard-tags-container">
+      <div className="btn-card-container">
         {tags.map((tag, index) => (
           <button
             key={index}
-            className="projectCard-tag"
+            className="btn-card"
             style={{ backgroundColor: backgroundColor, color: color }}
           >
             {tag}
