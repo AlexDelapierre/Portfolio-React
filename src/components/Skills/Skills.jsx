@@ -39,7 +39,7 @@ function Skills() {
 
   return (
     <section id="skills" className="skills">
-      <h2>Mes <span className='text-secondary-color'>Compétences</span></h2>
+      <h2>Mes <span className='primary-color'>Compétences</span></h2>
       <div className="skills-container">
         {skillsData.map((skill, index) => (
           <SkillCard

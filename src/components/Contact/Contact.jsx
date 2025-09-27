@@ -7,12 +7,12 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <h2 className="contact-title">Me <span className='text-secondary-color'>contacter</span></h2>
+      <h2 className="contact-title">Me <span className='primary-color'>contacter</span></h2>
 
       <div className="contact-container">
         {/* Bloc texte */}
         <div className="contact-text">
-          <h3>Travaillons <span className='text-secondary-color'>ensemble</span></h3>
+          <h3>Travaillons <span className='primary-color'>ensemble</span></h3>
           <p>
             Vous avez un projet en tête ? Une question ? N'hésitez pas à me
             contacter, je serais ravi d'échanger avec vous.

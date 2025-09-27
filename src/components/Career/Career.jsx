@@ -4,7 +4,7 @@ import "./Career.css";
 function Career() {
 	return (
 		<section className="career" id="career">
-			<h2 className="career__title">Mon <span className='text-secondary-color'>parcours</span></h2>
+			<h2 className="career__title">Mon <span className='primary-color'>parcours</span></h2>
 			<div className="career__content">
 				<p>
 					Monteur-câbleur - Euroconcep (intérim) 11/2023  01/2025 <br />

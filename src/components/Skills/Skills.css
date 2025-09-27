@@ -6,5 +6,5 @@
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; 
+  gap: 3rem; 
 }

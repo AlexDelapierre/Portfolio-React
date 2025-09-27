@@ -77,7 +77,7 @@ function Navbar() {
             />
           </div> */}
           <span className="header__logo-sub">
-            Alexandre <span className="text-secondary-color">Delapierre</span>
+            Alexandre <span className="primary-color">Delapierre</span>
           </span>
         </div>
 

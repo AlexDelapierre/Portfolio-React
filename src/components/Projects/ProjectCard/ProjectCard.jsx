@@ -8,8 +8,6 @@ function ProjectCard({
   title, 
   description, 
   tags, 
-  backgroundColor, 
-  color, 
   liveLink, 
   codeLink 
 }) {
@@ -59,7 +57,7 @@ function ProjectCard({
 
       <div className="projectCard-content"> 
         {/* Titre */}
-        <h4 className="projectCard-title">{title}</h4>
+        <h4 className="projectCard-title primary-color">{title}</h4>
 
         {/* Description */}
         {description && <p className="projectCard-description">{description}</p>}
@@ -70,7 +68,7 @@ function ProjectCard({
             <button
               key={index}
               className="btn-card"
-              style={{ backgroundColor: backgroundColor, color: color }}
+              style={{ backgroundColor: "#213f7a", color: "#50a2ff" }}
             >
               {tag}
             </button>

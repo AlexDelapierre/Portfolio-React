@@ -6,7 +6,7 @@
 	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 	display: flex;
 	flex-direction: column;
-	border: 1px solid #19578e;
+	border: 1px solid #1a62a1;
 	box-sizing: border-box;
 	transition: transform 0.2s;
 }
@@ -52,8 +52,8 @@
 }
 
 .btn-projectCard {
-  width: 10em;
-  height: 3em
+  width: 5em;
+  height: 2.5em
 }
 
 /* Smartphone */

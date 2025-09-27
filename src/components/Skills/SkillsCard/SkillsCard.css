@@ -22,16 +22,13 @@
 @media (min-width: 768px) {
 	.skillsCard-container {
 		width: 48%;
-		min-width: 180px;
 	}
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
 	.skillsCard-container {
-		width: 24%;
-		min-width: 220px;
-		max-width: 350px;
+		width: 23%;
 	}
 }
 

@@ -17,10 +17,10 @@ function Hero() {
         </div>
 
         <h1>
-          ALEXANDRE <span className="text-secondary-color">DELAPIERRE</span>
+          ALEXANDRE <span className="primary-color">DELAPIERRE</span>
         </h1>
         <h2 className="home-hero__title">
-          Développeur <span className="text-secondary-color">Web Fullstack</span>
+          Développeur <span className="primary-color">Web Fullstack</span>
         </h2>
 
         <div className="home-hero__info">
