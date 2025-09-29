@@ -1,16 +1,18 @@
+import VintagoMobile from "../assets/img/Vintago_mobile.PNG";
+import VintagoDesktop from "../assets/img/Vintago_desktop.PNG";
 import RestaurantMobile from "../assets/img/Restaurant_mobile.PNG";
 import RestaurantDesktop from "../assets/img/Restaurant_desktop.PNG";
 import RecettesMobile from "../assets/img/Recettes_mobile.PNG";
 import RecettesDesktop from "../assets/img/Recettes_desktop.PNG";
 import SymfonyShopMobile from "../assets/img/SymfonyShop_mobile.PNG";
 import SymfonyShopDesktop from "../assets/img/SymfonyShop_desktop.PNG";
-import BookeoShopMobile from "../assets/img/Bookeo_mobile.PNG";
-import BookeoShopDesktop from "../assets/img/Bookeo_desktop.PNG";
+import BookeoMobile from "../assets/img/Bookeo_mobile.PNG";
+import BookeoDesktop from "../assets/img/Bookeo_desktop.PNG";
 
 const projectsData = [
     {
-      imageMobile: RestaurantMobile, 
-      imageDesktop: RestaurantDesktop,
+      imageMobile: VintagoMobile, 
+      imageDesktop: VintagoDesktop,
       title: "Vintago",
       tags: ["React","TypeScript","Node.js","Express.js","MongoDB","JWT","Multer"],
       description: "Application web de vente d’occasion avec interface intuitive pour publier et gérer ses annonces. Une API sécurisée avec tokens JWT assure l’authentification des utilisateurs, la protection des routes et la gestion des images, offrant une expérience fluide et fiable côté serveur.",
@@ -45,8 +47,8 @@ const projectsData = [
       codeLink: "https://github.com/AlexDelapierre/SymfonyShop"
     },
     {
-      imageMobile: BookeoShopMobile,
-      imageDesktop: BookeoShopDesktop,
+      imageMobile: BookeoMobile,
+      imageDesktop: BookeoDesktop,
       title: "Bookeo",
       description: "Plateforme pour gérer une collection de BD et Manga avec interface d’administration sécurisée. Possibilité d’ajouter, modifier ou supprimer des articles, et carrousel dynamique pour parcourir les visuels de manière fluide. Design responsive, mobile-first.",
       tags: ["PHP", "MySQL","JavaScript","HTML", "CSS", "Bootstrap"],
