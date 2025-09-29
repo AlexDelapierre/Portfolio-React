@@ -5,3 +5,19 @@
 .about p {
   margin-bottom: 3rem;
 }
+
+.about__btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  /* margin-bottom: 2rem; */
+}
+
+.btn-cv {
+  font-size: 1.6rem;
+  width: 12em;
+  height: 3.5em;
+  padding: 1.5rem 2rem;
+  text-align: center
+}
