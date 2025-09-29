@@ -36,25 +36,26 @@ function ProjectCard({
 
   return (
     <div className="projectCard-container">
+      
+      <div className="projectCard-image-container">
+        {/* Bandeau mobile - affiché uniquement sur mobile */}
+        {isMobile && (
+          <div 
+            className="projectCard-mobile-banner"
+            style={{
+              backgroundImage: `url(${BandeauMobile})`,
+              backgroundPosition: bgPosition,
+              backgroundSize: "cover",
+            }}
+          />
+        )}
 
-      {/* Bandeau mobile - affiché uniquement sur mobile */}
-      {isMobile && (
-        <div 
-          className="projectCard-mobile-banner"
-          style={{
-            backgroundImage: `url(${BandeauMobile})`,
-            backgroundPosition: bgPosition,
-            backgroundSize: "cover",
-          }}
+        {/* Image du projet */}  
+        <div
+          className="projectCard-image"
+          style={{backgroundImage: `url(${image})`,}}
         />
-      )}
-
-      {/* Image du projet */}  
-      <div
-        className="projectCard-image"
-        style={{backgroundImage: `url(${image})`,}}
-      />
-
+      </div>
       <div className="projectCard-content"> 
         {/* Titre */}
         <h4 className="projectCard-title primary-color">{title}</h4>
