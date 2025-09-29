@@ -1,3 +1,7 @@
 .about {
   background-color: #0f172b;   
 }
+
+.about p {
+  margin-bottom: 3rem;
+}
