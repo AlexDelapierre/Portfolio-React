@@ -77,9 +77,25 @@ function ProjectCard({
 
         {/* Boutons Voir et Code */}
         <div className="projectCard-buttons">   
-          <a href={liveLink} className="btn btn-projectCard btn-primary btn-primary:hover">Voir</a>
-          <a href={codeLink} className="btn btn-projectCard btn-secondary btn-secondary:hover">Code</a>
+          <a 
+            href={liveLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-projectCard btn-primary"
+          >
+            Voir
+          </a>
+
+          <a 
+            href={codeLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-projectCard btn-secondary"
+          >
+            Code
+          </a>
         </div>
+
       </div>     
     </div>
   );

@@ -5,9 +5,9 @@ const skillsData = [
     {
       icon: FaLaptopCode,
       title: "Frontend",
-      tags: ["JavaScript", "ReactJS", "Twig", "Responsive Design", "Mobile First"],
-      backgroundColor: "#213f7a",
-      color: "#50a2ff"
+      tags: ["JavaScript", "React", "Twig", "Responsive Design", "Mobile First"],
+      backgroundColor: "#3b347a",
+      color: "#c27aff"
     },
     {
       icon: FaDatabase,
