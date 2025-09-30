@@ -35,41 +35,39 @@ function ProjectCard({
   }, [imageMobile, imageDesktop]);
 
   return (
-    <div className="projectCard-container">
+    <div className="card">
       
-      <div className="projectCard-image-container">
+      <div className="card-image-container">
         {/* Bandeau mobile - affiché uniquement sur mobile */}
         {isMobile && (
-          <div 
-            className="projectCard-mobile-banner"
-            style={{
-              backgroundImage: `url(${BandeauMobile})`,
-              backgroundPosition: bgPosition,
-              backgroundSize: "cover",
-            }}
+          <img
+            className="card-mobile-banner"
+            src={BandeauMobile}
+            alt="Bandeau mobile"
           />
         )}
 
         {/* Image du projet */}  
-        <div
-          className="projectCard-image"
-          style={{backgroundImage: `url(${image})`,}}
+        <img
+          className="card-image"
+          src={image}
+          alt="Aperçu du projet"
         />
       </div>
-      <div className="projectCard-content"> 
-        {/* Titre */}
-        <h4 className="projectCard-title primary-color">{title}</h4>
 
-        {/* Description */}
-        {description && <p className="projectCard-description">{description}</p>}
+      <div className="card-content"> 
+          {/* Titre */}
+          <h4 className="card-title primary-color">{title}</h4>
+
+          {/* Description */}
+          {description && <p className="card-description">{description}</p>}
 
         {/* Technologies */}
-        <div className="btn-card-container">
+        <div className="card-skills-container">
           {tags.map((tag, index) => (
             <button
               key={index}
-              className="btn-card"
-              style={{ backgroundColor: "#213f7a", color: "#50a2ff" }}
+              className="card-skills-button"
             >
               {tag}
             </button>
@@ -77,21 +75,20 @@ function ProjectCard({
         </div>
 
         {/* Boutons Voir et Code */}
-        <div className="projectCard-buttons">   
+        <div className="card-buttons-container">   
           <a 
             href={liveLink} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn btn-projectCard btn-primary"
+            className="btn card-btn btn-primary"
           >
             Voir
           </a>
-
           <a 
             href={codeLink} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn btn-projectCard btn-secondary"
+            className="btn card-btn btn-secondary"
           >
             Code
           </a>

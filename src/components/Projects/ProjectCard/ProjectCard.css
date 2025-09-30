@@ -1,104 +1,98 @@
-.projectCard-container {
-	/* background: #1e3057; */
+.card {
 	background-color: #162346;
 	border-radius: 5%;
 	overflow: hidden;
 	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 	display: flex;
 	flex-direction: column;
-	height: 40vh;
 	border: 1px solid #1a62a1;
 	box-sizing: border-box;
 	transition: transform 0.2s;
+	height: 60vh;
+	width: 20vw;
 }
 
-.projectCard-container:hover {
+.card-container:hover {
 	transform: scale(1.04);
-}
-
-.projectCard-image-container {
-	flex: 1;  
-}
-
-.projectCard-image {
-	background-size: 100% auto; 
-  background-position: top center; 
-  background-repeat: no-repeat;
-	transition: filter 0.2s;
-}
-
-.projectCard-container:hover .projectCard-image {
 	filter: brightness(0.7);
 }
 
-.projectCard-content {
-	flex: 1; 
-	padding: 1rem;
+.card-image-container {
+	height: 50%;
+}
+
+.card-mobile-banner {
+	width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  object-position: center; 
+}
+
+.card-image {
+	width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  object-position: center; 
+	transition: filter 0.2s;
+}
+
+.card-content {
+	height: 50%;
+	padding: 1em;
 }
 
 /* Titre */
-.projectCard-title {
-	margin-bottom: 0.5rem;
+.card-title {
 }
 
 /* Description */
-.projectCard-description {
-	font-size: 1.4rem;
+.card-description {
+	font-size: 1.4em;
 	line-height: 1.4;
-	margin-bottom: 0.5rem;
 }
+
+.card-skills-container{
+		background-color: chartreuse;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		padding: 0;
+		margin-bottom: 0.5em;
+	}
+
+.card-skills-button {
+	background-color: #213f7a;
+	color: "#50a2ff";
+	height: 2.5em;
+
+	border: none;
+	border-radius: 2em;
+	padding: 0.7em 1em;
+	/* min-width: 6em; */
+	font-size: 1.4em;
+	font-weight: 500;
+  /* margin-bottom: 4px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* cursor: default; */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}	
 
 /* Boutons Voir / Code */
-.projectCard-buttons {
+.card-buttons-container {
 	display: flex;
   flex-wrap: wrap;
-	gap: 1rem;
+	gap: 1em;
   padding: 0;
 	flex-wrap: wrap;
+	/* background-color: blueviolet; */
 }
 
-.btn-projectCard {
+.card-btn {
+  height: 2.5em;
   width: 5em;
-  height: 2.5em
-}
-
-/* Smartphone */
-@media (max-width: 480px) {
-	.projectCard-container {
-		height: 50vh;
-		width: 100%;
-	}
-	.projectCard-mobile-banner {
-		height: 10%; 
-		width: 100%;
-	}
-	.projectCard-image {
-		height: 40%; 
-		width: 100%;
-	}
-}
-
-/* Tablette */
-@media (min-width: 768px) {
-	.projectCard-container {
-		height: 80vh;
-		width: 32%;
-	}
-	.projectCard-image {
-		height: 50%; 
-		width: 100%;
-	}
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-	.projectCard-container {
-		height: 80vh;
-		width: 32%;
-	}
-	.projectCard-image {
-		height: 50%; 
-		width: 100%;
-	}
 }
 
