@@ -1,5 +1,5 @@
 import "./Projects.css";
-import ProjectCard from "./ProjectCard/ProjectCard";
+import Card from "../Card/Card";
 import projectsData from "../../data/projectsData";
 
 // Exemple d'icônes pour les projets (optionnel)
@@ -11,7 +11,7 @@ function Projects() {
       <h2>Mes <span className='primary-color'>Projets</span></h2>
       <div className="projectCards-wrapper">
         {projectsData.map((project, index) => (
-          <ProjectCard
+          <Card
             key={index}
             imageMobile={project.imageMobile}
             imageDesktop={project.imageDesktop}

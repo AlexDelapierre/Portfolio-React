@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./ProjectCard.css";
-import BandeauMobile from "../../../assets/img/Bandeau_mobile.PNG";
+import "./Card.css";
+import BandeauMobile from "../../assets/img/Bandeau_mobile.PNG";
 
 function ProjectCard({ 
   imageMobile, 
@@ -12,7 +12,6 @@ function ProjectCard({
   codeLink 
 }) {
   const [image, setImage] = useState(imageDesktop);
-  const [bgPosition, setBgPosition] = useState("center center");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   // Détection du viewport
@@ -20,11 +19,9 @@ function ProjectCard({
     const updateImage = () => {
       if (window.innerWidth <= 768) {
         setImage(imageMobile);
-        setBgPosition("center top"); 
         setIsMobile(true);
       } else {
         setImage(imageDesktop);
-        setBgPosition("center center"); 
         setIsMobile(false);
       }
     };
@@ -56,21 +53,21 @@ function ProjectCard({
       </div>
 
       <div className="card-content"> 
-          {/* Titre */}
-          <h4 className="card-title primary-color">{title}</h4>
+        {/* Titre */}
+        <h4 className="card-title primary-color">{title}</h4>
 
-          {/* Description */}
-          {description && <p className="card-description">{description}</p>}
+        {/* Description */}
+        <p className="card-description">{description}</p>
 
-        {/* Technologies */}
-        <div className="card-skills-container">
+        {/* Technologies */}  
+        <div v className="card-skills-container">
           {tags.map((tag, index) => (
-            <button
+            <span
               key={index}
               className="card-skills-button"
             >
               {tag}
-            </button>
+            </span>
           ))}
         </div>
 
@@ -93,7 +90,6 @@ function ProjectCard({
             Code
           </a>
         </div>
-
       </div>     
     </div>
   );
