@@ -55,7 +55,7 @@ function ProjectCard({
       <div className="card-content"> 
         <h4 className="card-title primary-color">{title}</h4>
         <p className="card-text">{description}</p>
-        
+
         <div v className="card-skills-container">
           {tags.map((tag, index) => (
             <span
@@ -71,17 +71,17 @@ function ProjectCard({
         <div className="card-buttons-container">   
           <a 
             href={liveLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn card-btn btn-primary"
+            target={liveLink === "#" ? "_self" : "_blank"} // si lien inactif, reste sur la page
+            rel={liveLink === "#" ? undefined : "noopener noreferrer"}
+            className={`btn card-btn btn-primary ${liveLink === "#" ? "inactive-link" : ""}`}
           >
             Voir
           </a>
-          <a 
-            href={codeLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn card-btn btn-secondary"
+          <a
+            href={codeLink}
+            target={codeLink === "#" ? "_self" : "_blank"} // ne s'ouvre pas dans un nouvel onglet si inactif
+            rel={codeLink === "#" ? undefined : "noopener noreferrer"}
+            className={`btn card-btn btn-secondary ${codeLink === "#" ? "inactive-link" : ""}`}
           >
             Code
           </a>

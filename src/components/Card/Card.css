@@ -112,3 +112,13 @@
 .card-btn {
   padding: 0.4rem 1rem;
 }
+
+.inactive-link {
+  background-color: #243b6b !important; /* couleur sombre fixe */
+  color: #888 !important;               /* texte plus clair */
+  cursor: not-allowed;
+  pointer-events: none;                  /* désactive le clic */
+  opacity: 0.7;                          /* optionnel : accent visuel */
+  text-decoration: none;                 /* retire soulignement éventuel */
+}
+

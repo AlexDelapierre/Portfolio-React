@@ -56,5 +56,5 @@ const projectsData = [
       codeLink: "https://github.com/AlexDelapierre/Bookeo"
     }
   ];
-
+  
   export default projectsData;
