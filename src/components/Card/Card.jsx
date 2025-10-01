@@ -53,18 +53,14 @@ function ProjectCard({
       </div>
 
       <div className="card-content"> 
-        {/* Titre */}
         <h4 className="card-title primary-color">{title}</h4>
-
-        {/* Description */}
-        <p className="card-description">{description}</p>
-
-        {/* Technologies */}  
+        <p className="card-text">{description}</p>
+        
         <div v className="card-skills-container">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="card-skills-button"
+              className="card-skills-tags"
             >
               {tag}
             </span>

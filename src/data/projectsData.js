@@ -41,7 +41,7 @@ const projectsData = [
       imageMobile: SymfonyShopMobile,
       imageDesktop: SymfonyShopDesktop,
       title: "SymfonyShop",
-      description: "Site e-commerce avec interface d’administration sécurisée et gestion complète des produits et commandes. Fonctionnalités avancées côté serveur : authentification des utilisateurs et gestion sécurisée des sessions via tokens JWT, réinitialisation des mots de passe, ainsi que la gestion d’images.",
+      description: "Site e-commerce avec interface d’administration sécurisée et gestion complète des produits et commandes. Fonctionnalités avancées côté serveur : authentification des utilisateurs et gestion sécurisée des sessions via tokens JWT, réinitialisation des mots de passe et gestion d’images.",
       tags: ["PHP", "Symfony", "Doctrine", "MySQL", "JavaScript","Bootstrap"],
       liveLink: "https://site-e-commerce.alexdelapierre.fr/",
       codeLink: "https://github.com/AlexDelapierre/SymfonyShop"

@@ -9,7 +9,7 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <h2>Mes <span className='primary-color'>Projets</span></h2>
-      <div className="projectCards-wrapper">
+      <div className="projectCards-grid">
         {projectsData.map((project, index) => (
           <Card
             key={index}
