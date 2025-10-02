@@ -1,10 +1,4 @@
 .scroll-arrow {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-top: 1rem;  */
-
   position: absolute;
   left: 50%;
   bottom: 5rem; 
@@ -12,6 +6,14 @@
   cursor: pointer;
 }
 
+/* Tablette */
+@media screen and (max-width: 767px) {
+  .scroll-arrow {
+    bottom: 1.5rem; 
+  }
+}
+
+/* Tablette */
 @media screen and (min-width: 767px) {
   .scroll-arrow {
     bottom: 1.5rem; 
