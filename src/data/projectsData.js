@@ -44,7 +44,7 @@ const projectsData = [
       imageDesktop: RecettesDesktop,
       title: "Cuisinea",
       description: "Application web de recettes avec espace membre permettant de créer, modifier et supprimer ses propres recettes. Gestion des comptes utilisateurs et expérience fluide grâce à un design responsive pour mobile et desktop.",
-      tags: ["HTML","CSS","Bootstrap","PHP", "MySQL" ],
+      tags: ["PHP", "MySQL","HTML","CSS","Bootstrap"],
       liveLink: "https://cuisinea.alexdelapierre.fr/",
       codeLink: "https://github.com/AlexDelapierre/Cuisinea"
     },
