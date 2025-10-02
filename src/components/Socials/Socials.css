@@ -1,6 +1,8 @@
 .socials-container {
   display: flex;
-  justify-content: center; /* par défaut centré */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
 }
 
 .socials-container.align-left {
@@ -12,8 +14,13 @@
 }
 
 .social {
-  width: 3rem;
-  margin-right: 1rem
+    width: 4rem;
+  }
+
+@media screen and (min-width: 767px) {
+  .social {
+    width: 3rem;
+  }
 }
 
 .social:hover {

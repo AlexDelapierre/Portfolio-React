@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 import PhotoIdentite from "../../assets/img/Photo_identite.jpg";
 import Socials from "../Socials/Socials";
+import ScrollArrow from "../ScrollArrow/ScrollArrow";
+// import { FaAngleDown } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -36,9 +38,9 @@ function Hero() {
 
         <Socials/>
         
-        {/* <div className="home-hero__mouse-scroll-cont">
-          <div className="mouse"></div>
-        </div> */}
+        <div className="App">
+          <ScrollArrow />
+        </div>
 
       </div>
     </section>

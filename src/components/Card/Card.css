@@ -9,7 +9,7 @@
   overflow: hidden;
   box-shadow: 0 2px 16px rgba(0,0,0,0.2);
   max-width: 600px;
-  font-size: clamp(1.5rem, 2vw, 1.4rem);
+  font-size: clamp(1.4rem, 2vw, 1.3rem);
   transition: transform 0.2s;
 }
 
@@ -76,10 +76,9 @@
   /* line-height: 1.7; */
   color: #e0e0e0;
   margin-bottom: 0.5rem;
-  font-size: clamp(1.5rem, 2vw, 1.4rem);
-
+  font-size: clamp(1.4rem, 2vw, 1.3rem);
   display: -webkit-box;       /* boîte flexible */
-  -webkit-line-clamp: 4;      /* limite à 4 lignes */
+  -webkit-line-clamp: 5;      /* limite à 4 lignes */
   -webkit-box-orient: vertical;
   overflow: hidden;           /* cache le texte qui dépasse */
   text-overflow: ellipsis;    /* ajoute "..." à la fin */
@@ -96,10 +95,11 @@
 	color: #50a2ff;
 	border: none;
 	border-radius: 2rem;
-	padding: 0.4rem 1rem;
+	padding: 0.3rem 1rem;
   display: flex;
 	align-items: center;
 	justify-content: center;
+
 }	
 
 .card-buttons-container {
@@ -110,7 +110,7 @@
 }
 
 .card-btn {
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .inactive-link {

@@ -8,8 +8,19 @@ import SymfonyShopMobile from "../assets/img/SymfonyShop_mobile.PNG";
 import SymfonyShopDesktop from "../assets/img/SymfonyShop_desktop.PNG";
 import BookeoMobile from "../assets/img/Bookeo_mobile.PNG";
 import BookeoDesktop from "../assets/img/Bookeo_desktop.PNG";
+import PortfolioMobile from "../assets/img/Portfolio_mobile.PNG";
+import PortfolioDesktop from "../assets/img/Portfolio_desktop.PNG";
 
 const projectsData = [
+  {
+      imageMobile: PortfolioMobile, 
+      imageDesktop: PortfolioDesktop,
+      title: "Portfolio",
+      tags: ["React","JavaScript","CSS","Responsive Design","Mobile First"],
+      description: "Projet réalisé pour présenter mes compétences en frontend. Conception d’un site interactif et responsive, avec animations et navigation fluide. Développement d’une interface moderne avec React et optimisation de l’expérience utilisateur.",
+      liveLink: "#",
+      codeLink: "https://github.com/AlexDelapierre/Portfolio-React"
+    },
     {
       imageMobile: VintagoMobile, 
       imageDesktop: VintagoDesktop,
