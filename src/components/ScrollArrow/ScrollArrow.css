@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-/* Tablette */
+/* Small phone */
 @media screen and (max-width: 767px) {
   .scroll-arrow {
     bottom: 1.5rem; 
