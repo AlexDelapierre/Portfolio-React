@@ -17,7 +17,7 @@ const projectsData = [
       imageDesktop: PortfolioDesktop,
       title: "Portfolio",
       tags: ["React","JavaScript","CSS","Responsive Design","Mobile First"],
-      description: "Projet réalisé pour présenter mes compétences en frontend. Conception d’un site interactif et responsive, avec animations et navigation fluide. Développement d’une interface moderne avec React et optimisation de l’expérience utilisateur.",
+      description: "Création d’un portfolio React au design moderne et épuré pour valoriser mes projets. Interface entièrement responsive, animations fluides et composants personnalisés pour chaque section. Utilisation des props et des hooks (useState, useEffect) pour la gestion dynamique du contenu.",
       liveLink: "#",
       codeLink: "https://github.com/AlexDelapierre/Portfolio-React"
     },
