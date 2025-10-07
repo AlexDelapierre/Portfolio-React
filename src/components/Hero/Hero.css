@@ -12,7 +12,7 @@
   margin: auto;
   margin-bottom: 1.5rem;
   border: 5px solid #caa863;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .portrait {
@@ -32,17 +32,9 @@
 /* Tablette */
 @media screen and (min-width: 767px) {
   .home-hero__title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 2rem
   }
-}
-
-/* Desktop */
-@media screen and (min-width: 767px) {
-  .home-hero__title {
-  font-size: 3rem;
-  margin-top: 1rem
-}
 }
 
 .home-hero__info {
@@ -62,9 +54,8 @@
   .home-hero__info {
     margin: 1rem auto 0 auto;
   }
+  
 }
-
-
 .home-hero__info-text {
   text-align: center;
 }

@@ -1,22 +1,29 @@
 .scroll-arrow {
   position: absolute;
   left: 50%;
-  bottom: 5rem; 
+  bottom: 15rem; 
   transform: translateX(-50%);
   cursor: pointer;
 }
 
 /* Small phone */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .scroll-arrow {
     bottom: 1.5rem; 
   }
-}
+} */
 
 /* Tablette */
 @media screen and (min-width: 767px) {
   .scroll-arrow {
     bottom: 1.5rem; 
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .scroll-arrow {
+    bottom: 2rem; 
   }
 }
 
