@@ -11,16 +11,7 @@ html {
   font-family: inherit
 }
 
-/* -------- Mobile -------- */
-/* Écrans ≤ 599px */
-/* @media only screen and (max-width: 599px) { 
-  html {
-      font-size: 50%; 
-  }
-} */
-
 /* -------- Tablette / petits desktop -------- */
-/* Écrans 600px – 899px */
 @media only screen and (min-width: 600px) and (max-width: 899px) { 
   html {
       font-size: 70%; 
@@ -28,7 +19,6 @@ html {
 }
 
 /* -------- Desktop -------- */
-/* Écrans 900px – 1799px */
 @media only screen and (min-width: 900px) and (max-width: 1799px) { 
   html {
       font-size: 70%; 
@@ -36,7 +26,6 @@ html {
 }
 
 /* -------- écran large -------- */
-/* Écrans 1800px  */
 @media only screen and (min-width: 1800px) {
   html {
       font-size:80%
@@ -117,7 +106,6 @@ h4 {
 
 p {
   font-size: 2rem;
-  /* letter-spacing: 2px; */
 }
 
 a {

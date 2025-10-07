@@ -1,9 +1,12 @@
 .scroll-arrow {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   bottom: 15rem; 
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  display: flex;
+  justify-content: center; 
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 /* Small phone */
