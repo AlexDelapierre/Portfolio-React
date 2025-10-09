@@ -1,3 +1,4 @@
+import RevealSection from "../RevealSection/RevealSection";
 import "./Projects.css";
 import Card from "../Card/Card";
 import projectsData from "../../data/projectsData";
@@ -8,21 +9,23 @@ import projectsData from "../../data/projectsData";
 function Projects() {
   return (
     <section id="projects" className="projects">
-      <h2>Mes <span className='primary-color'>Projets</span></h2>
-      <div className="projectCards-grid">
-        {projectsData.map((project, index) => (
-          <Card
-            key={index}
-            imageMobile={project.imageMobile}
-            imageDesktop={project.imageDesktop}
-            title={project.title}
-            description={project.description}
-            tags={project.tags}
-            liveLink={project.liveLink}
-            codeLink={project.codeLink}
-          />
-        ))}
-      </div>
+      <RevealSection>
+        <h2>Mes <span className='primary-color'>Projets</span></h2>
+        <div className="projectCards-grid">
+          {projectsData.map((project, index) => (
+            <Card
+              key={index}
+              imageMobile={project.imageMobile}
+              imageDesktop={project.imageDesktop}
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              liveLink={project.liveLink}
+              codeLink={project.codeLink}
+            />
+          ))}
+        </div>
+      </RevealSection>
     </section>
   );
 }
