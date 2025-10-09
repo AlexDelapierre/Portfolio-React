@@ -1,43 +1,21 @@
 .projects {
-  background-color: #0f172b;   
+  background-color: #0f172b; 
 }
 
-@media (max-width: 768px) { 
-	
-}
+.projectCards-grid {
+		display: grid;
+		gap: 3rem;
+		width: 100%;
+	}
 
 @media (min-width: 768px) { 
 	.projectCards-grid {
-		display: grid;
-		gap: 3rem;
 		grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (orientation:landscape) {
 	.projectCards-grid {
-		display: grid;
-		gap: 3rem;
-		grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
 	}
 }
-
-
-/* .projectCards-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2.5rem;
-} */
-
-/* @media (min-width: 768px) { 
-	.projectCards-wrapper {
-		justify-content: space-between;
-	}
-}
-
-@media (min-width: 1024px) {
-	.projectCards-wrapper {
-		justify-content:left;
-		gap: 3rem;
-	}
-} */

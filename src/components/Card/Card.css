@@ -1,16 +1,14 @@
+/* --- Card --- */
 .card {
-  position: relative;
   display: flex;
-  flex-direction: column; 
-  height: 520px; 
-  background-color: #162346;
+  flex-direction: column;
+  /* min-height: 50vh; */
+  background: #162346;
   border: 1px solid #1a62a1;
-  border-radius: 12px;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
-  max-width: 600px;
-  font-size: clamp(1.4rem, 2vw, 1.3rem);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Effet zoom sur la card */
@@ -18,10 +16,10 @@
   transform: scale(1.04);
 }
 
+/* Partie image */
 .card-image-container {
-  height: 50%; 
-  display: flex;
-  flex-direction: column; /* pour mobile banner + image */
+  /* height: 50%; */
+  height: 25vh;
   transition: transform 0.2s;
 }
 
@@ -35,78 +33,65 @@
   display: none; /* caché sur desktop */
 }
 
+/* --- Image --- */
 .card-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; 
+  object-position: top;
 }
 
-/* --- Mobile --- */
-@media screen and (max-width: 767px) {
-  .card {
-    margin: 5rem auto;
-  }
-
-  .card-image-container {
-    flex-direction: column;
-  }
-
-  .card-mobile-banner {
-    display: block;
-    width: 100%;
-    height: 20%; 
-    object-fit: cover;
-  }
-
-  .card-image {
-    height: 80%; 
-  }
-}
-
+/* --- Contenu --- */
 .card-content {
-  height: 50%; 
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  /* gap: 1rem; */
+  font-size: clamp(1.3rem, 1.2vw, 1.5rem);
+  padding: 1rem;
+  flex: 1; /* <== occupe toute la hauteur restante de la card */
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+}
+
+.card-content * {
+  font-size: inherit; /* Force tous les enfants à hériter */
+}
+
+.card-title {
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 .card-text {
-  /* line-height: 1.7; */
-  color: #e0e0e0;
   margin-bottom: 0.5rem;
-  font-size: clamp(1.4rem, 2vw, 1.3rem);
-  display: -webkit-box;       /* boîte flexible */
-  -webkit-line-clamp: 5;      /* limite à 4 lignes */
+  /* Empêche trop de texte */
+  /* display: -webkit-box;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;           /* cache le texte qui dépasse */
-  text-overflow: ellipsis;    /* ajoute "..." à la fin */
+  overflow: hidden; */
 }
 
 .card-skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-skills-tags {
-	background-color: #213f7a;
-	color: #50a2ff;
-	border: none;
-	border-radius: 2rem;
-	padding: 0.3rem 1rem;
+  background-color: #213f7a;
+  color: #50a2ff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
   display: flex;
-	align-items: center;
-	justify-content: center;
-
-}	
+  align-items: center;
+  justify-content: center;
+}
 
 .card-buttons-container {
-  position: absolute;
   display: flex;
   gap: 1rem;
-  bottom: 1rem;
+  margin-top: auto; /* pousse les boutons vers le bas */
 }
 
 .card-btn {
@@ -114,11 +99,36 @@
 }
 
 .inactive-link {
-  background-color: #243b6b !important; /* couleur sombre fixe */
-  color: #888 !important;               /* texte plus clair */
+  background-color: #243b6b !important;
+  color: #888 !important;
   cursor: not-allowed;
-  pointer-events: none;                  /* désactive le clic */
-  opacity: 0.7;                          /* optionnel : accent visuel */
-  text-decoration: none;                 /* retire soulignement éventuel */
+  pointer-events: none;
+  opacity: 0.7;
+  text-decoration: none;
 }
 
+/* --- Mobile --- */
+@media screen and (max-width: 734px) {
+  .card {
+  margin: 1rem auto;
+  }
+}
+
+/* --- Mode portrait --- */
+@media screen and (orientation: portrait) {
+  .card-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-mobile-banner {
+    display: block;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+  }
+
+  .card-image {
+    height: 80%;
+  }
+}

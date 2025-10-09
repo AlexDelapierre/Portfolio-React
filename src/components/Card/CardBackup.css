@@ -1,0 +1,144 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 70vh; 
+  background-color: #162346;
+  border: 1px solid #1a62a1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+/* Effet zoom sur la card */
+.card:hover {
+  transform: scale(1.04);
+}
+
+/* Partie image */
+.card-image-container {
+  height: 50%; 
+  /* flex: 1 1 50%;  */
+  transition: transform 0.2s;
+}
+
+/* Assombrir uniquement l'image */
+.card:hover .card-image-container {
+  filter: brightness(0.7);
+  transition: filter 0.2s;
+}
+
+.card-mobile-banner {
+  display: none; /* caché sur desktop */
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; 
+}
+
+/* --- Mobile --- */
+@media screen and (max-width: 767px) {
+  .card {
+    margin: 5rem auto;
+  }
+  .card-image-container {
+    display: flex;
+    flex-direction: column; /* pour mobile banner + image */
+  }
+  .card-mobile-banner {
+    display: block;
+    width: 100%;
+    height: 20%; 
+    object-fit: cover;
+  }
+  .card-image {
+    height: 80%; 
+  }
+}
+
+.card-content {
+  /* flex: 1 1 50%;  */
+  height: 50%; 
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  /* flex-grow: 1; */
+  /* gap: 1rem; */
+}
+
+.card-text {
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.card-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-skills-tags {
+	background-color: #213f7a;
+	color: #50a2ff;
+	border: none;
+	border-radius: 2rem;
+	padding: 0.3rem 1rem;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}	
+
+.card-buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.card-btn {
+  padding: 0.3rem 1rem;
+}
+
+.inactive-link {
+  background-color: #243b6b !important; /* couleur sombre fixe */
+  color: #888 !important;               /* texte plus clair */
+  cursor: not-allowed;
+  pointer-events: none;                  /* désactive le clic */
+  opacity: 0.7;                          /* optionnel : accent visuel */
+  text-decoration: none;                 /* retire soulignement éventuel */
+}
+
+/* -------- Mobile -------- */
+@media only screen and (max-width: 599px) { 
+  .card-text-and-tags {
+    font-size: clamp(1rem, 2vw, 1.3rem); 
+  }
+}
+
+/* -------- Tablette / petits desktop -------- */
+@media only screen and (min-width: 600px) and (max-width: 899px) { 
+  .card-text-and-tags {
+    font-size: clamp(1rem, 2vw, 1.3rem); 
+  }
+}
+
+/* -------- Desktop -------- */
+@media only screen and (min-width: 900px) and (max-width: 1799px) { 
+  .card-text-and-tags {
+    font-size: clamp(1rem, 2vw, 1.3rem); 
+  }
+}
+
+/* -------- écran large -------- */
+@media only screen and (min-width: 1800px) {
+ .card-text-and-tags {
+    font-size: clamp(1rem, 2vw, 1.3rem); 
+  }
+}
+

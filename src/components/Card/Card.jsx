@@ -12,12 +12,12 @@ function ProjectCard({
   codeLink 
 }) {
   const [image, setImage] = useState(imageDesktop);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
   // Détection du viewport
   useEffect(() => {
     const updateImage = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 1024) {
         setImage(imageMobile);
         setIsMobile(true);
       } else {
@@ -33,41 +33,43 @@ function ProjectCard({
 
   return (
     <div className="card">
-      
+
       <div className="card-image-container">
         {/* Bandeau mobile - affiché uniquement sur mobile */}
-        {isMobile && (
+          {isMobile && (
+            <img
+              className="card-mobile-banner"
+              src={BandeauMobile}
+              alt="Bandeau mobile"
+            />
+          )}
+  
+          {/* Image du projet */}  
           <img
-            className="card-mobile-banner"
-            src={BandeauMobile}
-            alt="Bandeau mobile"
+            className="card-image"
+            src={image}
+            alt="Aperçu du projet"
           />
-        )}
-
-        {/* Image du projet */}  
-        <img
-          className="card-image"
-          src={image}
-          alt="Aperçu du projet"
-        />
       </div>
 
-      <div className="card-content"> 
-        <h4 className="card-title primary-color">{title}</h4>
-        <p className="card-text">{description}</p>
+      <div className="card-content">
+        <div className="card-text-and-tags"> 
+          <h4 className="card-title primary-color">{title}</h4>
+          <p className="card-text">{description}</p>
 
-        <div v className="card-skills-container">
-          {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="card-skills-tags"
-            >
-              {tag}
-            </span>
-          ))}
+          <div className="card-skills-container">
+            {tags.map((tag, index) => (
+              <span
+                key={index}
+                className="card-skills-tags"
+              >
+                {tag}
+              </span>
+            ))} 
+          </div>
         </div>
 
-        {/* Boutons Voir et Code */}
+          {/* Boutons Voir et Code */}
         <div className="card-buttons-container">   
           <a 
             href={liveLink} 
@@ -86,7 +88,9 @@ function ProjectCard({
             Code
           </a>
         </div>
-      </div>     
+
+      </div>
+      
     </div>
   );
 }
