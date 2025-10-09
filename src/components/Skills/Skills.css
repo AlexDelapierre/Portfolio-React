@@ -3,8 +3,26 @@
   background-color: #1a2a50;   
 }
 
-.skills-container {
+/* .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem; 
+} */
+
+.skills-container {
+		display: grid;
+		gap: 3rem;
+		width: 100%;
+	}
+
+@media (min-width: 768px) { 
+	.skills-container {
+		grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+	}
+}
+
+@media (min-width: 1024px) and (orientation:landscape) {
+	.skills-container {
+		grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+	}
 }

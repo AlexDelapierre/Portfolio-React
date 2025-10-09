@@ -1,15 +1,15 @@
 /* ===== Mobile First ===== */
 .skillsCard-container {
-	width: 100%;
-	min-width: 140px;
-	max-width: 100%;
-	background: #1e3057;
-	border-radius: 1rem;
-	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+	/* width: 100%; */
+	/* min-width: 140px;
+	max-width: 100%; */
 	display: flex;
 	flex-direction: column;
-	padding: 1.5rem;
+	background: #1e3057;
+	border-radius: 1rem;
 	border: 1px solid #278ee9;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+	padding: 1.5rem;
 	box-sizing: border-box;
 	margin-bottom: 1rem; 
 }
@@ -19,18 +19,18 @@
 }
 
 /* Tablette */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	.skillsCard-container {
 		width: 48%;
 	}
-}
+} */
 
 /* Desktop */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 	.skillsCard-container {
 		width: 23%;
 	}
-}
+} */
 
 .skillsCard-header {
 	display: flex;
@@ -49,7 +49,7 @@
 }
 
 .skillsCard-icon {
-  font-size: clamp(1.5rem, 4vw, 3rem); /* min = 1.5rem, max = 3rem */
+  font-size: clamp(1.5rem, 4vw, 3rem); 
   flex-shrink: 0; /* évite que l'icône se compresse */
 }
 
