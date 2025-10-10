@@ -5,7 +5,9 @@ import "./SkillsCard.css";
 function SkillsCard({ icon: Icon, title, tags, backgroundColor, color }) {
   return (
     <div className="skillsCard-container">
-      <RevealSection>
+      <RevealSection
+        hidden={{ opacity: 0, y: 20 }}
+      >
         {/* Partie icône + titre */}
         <div className="skillsCard-header">
           {Icon && (

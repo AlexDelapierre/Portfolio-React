@@ -34,7 +34,10 @@ function ProjectCard({
 
   return (
     <div className="card">
-      <RevealSection>
+      <RevealSection
+        staggerChildren={0.6}
+        hidden={{ opacity: 0, y: 0 }} // Animation sans décalage vertical
+      >
         <div className="card-image-container">
           {/* Bandeau mobile - affiché uniquement sur mobile */}
             {isMobile && (
