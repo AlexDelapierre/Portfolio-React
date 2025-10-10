@@ -3,6 +3,8 @@ import "./Socials.css";
 import LinkedinIcon from "../../assets/icons/Linkedin-white.svg";
 import GithubIcon from "../../assets/icons/github-white-60.svg";
 import CVIcon from "../../assets/icons/CV-white-48.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiDocumentText } from "react-icons/hi"; // pour l’icône de CV
 
 function Socials({ align = "center" }) {
 
@@ -20,11 +22,12 @@ function Socials({ align = "center" }) {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          {/* <img
             src={LinkedinIcon}
             alt="Alexandre Delapierre Linkedin Profile"
             className="social-icon"
-          />
+          /> */}
+          <FaLinkedin className="social-icon" />
         </a>
       </div>
 
@@ -35,11 +38,12 @@ function Socials({ align = "center" }) {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          {/* <img
             src={GithubIcon}
             alt="Alexandre Delapierre Github Profile"
             className="social-icon"
-          />
+          /> */}
+          <FaGithub className="social-icon" />
         </a>
       </div>
 
@@ -50,11 +54,12 @@ function Socials({ align = "center" }) {
           target="_blank"
           rel="noreferrer"
         >
-          <img
+          {/* <img
             src={CVIcon}
             alt="Alexandre Delapierre CV inline"
             className="social-icon"
-          />
+          /> */}
+          <HiDocumentText className="social-icon" />
         </a>
       </div>
     </div>
