@@ -115,7 +115,7 @@
 }
 
 /* --- Mode portrait --- */
-@media screen and (orientation: portrait) {
+/* @media screen and (orientation: portrait) {
   .card-image-container {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@
   .card-image {
     height: 80%;
   }
-}
+} */
 
 /* --- landscape --- */
 @media screen and (min-width: 1024px) and (orientation:landscape) {
