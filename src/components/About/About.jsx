@@ -8,7 +8,7 @@ function About() {
         <div className="about__content">
           <h2>A propos <span className='primary-color'>de moi</span></h2>
           <p>
-            Développeur web full-stack junior passionné, <span className="primary-color">certifié RNCP niveau 5 (Bac+2) - Développeur web et web mobile</span>, je pratique la programmation depuis plus de 3 ans avec une implication constante. 
+            Développeur web full stack junior React/Node.js et PHP/Symfony, <span className="primary-color">certifié RNCP niveau 5 (Bac+2) - Développeur web et web mobile</span>, je pratique la programmation depuis plus de 3 ans avec une implication constante. 
           </p>
           <p>
             À travers mes projets personnels, j’ai appris à relever des défis techniques, améliorer ma capacité à résoudre des problèmes, et concevoir des solutions efficaces et adaptées aux utilisateurs.

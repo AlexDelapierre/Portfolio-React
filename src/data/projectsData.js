@@ -13,6 +13,15 @@ import PortfolioDesktop from "../assets/img/Portfolio_desktop.PNG";
 
 const projectsData = [
   {
+    imageMobile: VintagoMobile, 
+    imageDesktop: VintagoDesktop,
+    title: "Vintago",
+    tags: ["React","TypeScript","Node.js","Express.js","MongoDB","JWT","Multer"],
+    description: "Application web de vente d’occasion avec interface intuitive pour publier et gérer ses annonces. Une API sécurisée avec tokens JWT assure l’authentification des utilisateurs, la protection des routes et la gestion des images, offrant une expérience fluide et fiable côté serveur.",
+    liveLink: "#",
+    codeLink: "https://github.com/AlexDelapierre/Vintago"
+  },
+  {
       imageMobile: PortfolioMobile, 
       imageDesktop: PortfolioDesktop,
       title: "Portfolio",
@@ -20,15 +29,6 @@ const projectsData = [
       description: "Création d’un portfolio React au design moderne et épuré pour valoriser mes projets. Interface entièrement responsive, animations fluides et composants personnalisés pour chaque section. Utilisation des props et des hooks (useState, useEffect) pour la gestion dynamique du contenu.",
       liveLink: "#",
       codeLink: "https://github.com/AlexDelapierre/Portfolio-React"
-    },
-    {
-      imageMobile: VintagoMobile, 
-      imageDesktop: VintagoDesktop,
-      title: "Vintago",
-      tags: ["React","TypeScript","Node.js","Express.js","MongoDB","JWT","Multer"],
-      description: "Application web de vente d’occasion avec interface intuitive pour publier et gérer ses annonces. Une API sécurisée avec tokens JWT assure l’authentification des utilisateurs, la protection des routes et la gestion des images, offrant une expérience fluide et fiable côté serveur.",
-      liveLink: "#",
-      codeLink: "https://github.com/AlexDelapierre/Vintago"
     },
     {
       imageMobile: RestaurantMobile, 
