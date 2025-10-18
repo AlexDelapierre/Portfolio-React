@@ -72,29 +72,27 @@ function ProjectCard({
               ))} 
             </div>
           </div>
-
-            {/* Boutons Voir et Code */}
-          <div className="card-buttons-container">   
-            <a 
-              href={liveLink} 
-              target={liveLink === "#" ? "_self" : "_blank"} // si lien inactif, reste sur la page
-              rel={liveLink === "#" ? undefined : "noopener noreferrer"}
-              className={`btn card-btn btn-primary ${liveLink === "#" ? "inactive-link" : ""}`}
-            >
-              Voir
-            </a>
-            <a
-              href={codeLink}
-              target={codeLink === "#" ? "_self" : "_blank"} // ne s'ouvre pas dans un nouvel onglet si inactif
-              rel={codeLink === "#" ? undefined : "noopener noreferrer"}
-              className={`btn card-btn btn-secondary ${codeLink === "#" ? "inactive-link" : ""}`}
-            >
-              Code
-            </a>
-          </div>
-
         </div>
      </RevealSection> 
+        {/* Boutons Voir et Code */}
+        <div className="card-buttons-container">   
+          <a 
+            href={liveLink} 
+            target={liveLink === "#" ? "_self" : "_blank"} // si lien inactif, reste sur la page
+            rel={liveLink === "#" ? undefined : "noopener noreferrer"}
+            className={`btn card-btn btn-primary ${liveLink === "#" ? "inactive-link" : ""}`}
+          >
+            Voir
+          </a>
+          <a
+            href={codeLink}
+            target={codeLink === "#" ? "_self" : "_blank"} // ne s'ouvre pas dans un nouvel onglet si inactif
+            rel={codeLink === "#" ? undefined : "noopener noreferrer"}
+            className={`btn card-btn btn-secondary ${codeLink === "#" ? "inactive-link" : ""}`}
+          >
+            Code
+          </a>
+        </div>
     </div>
   );
 }
