@@ -50,7 +50,8 @@
   padding: 1rem;
   flex: 1; /* <== occupe toute la hauteur restante de la card */
   box-sizing: border-box;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  padding: 1rem 1rem 0rem 1rem; 
 }
 
 .card-content * {
